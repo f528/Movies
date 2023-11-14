@@ -5,7 +5,7 @@ Welcome to Movies - Your Ultimate Movie Destination!
 
 ## Overview
 
-MovieHub is a web application that provides users with a seamless and enjoyable experience for discovering, exploring, and keeping track of their favorite movies. Whether you're a film buff or just looking for something to watch, MovieHub has got you covered.
+Movies is a web application that provides users with a seamless and enjoyable experience for discovering, exploring, and keeping track of their favorite movies. Whether you're a film buff or just looking for something to watch, MovieHub has got you covered.
 
 ## Features
 
