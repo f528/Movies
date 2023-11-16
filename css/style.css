@@ -17,6 +17,10 @@ ul {
 a {
   text-decoration: none;
 }
+::selection{
+  background-color:#e70634;
+
+}
 /*========navigation=============*/
 
 .navigation {
@@ -138,4 +142,59 @@ a {
   100%{
     opacity: 1;
   }
+}
+
+/*-----logo---------------*/
+.logo{
+
+  color:#e70634;
+  text-transform: uppercase;
+  font-size: 3REM;
+  font-weight: 400;
+  margin: 0px auto 0px 40px;
+  display: flex;
+  align-items :center;
+  font-family: Monoton;
+  letter-spacing: 1px;
+}
+.logo span{
+  font-size: 0.7rem;
+  margin-left: 5px;
+  font-weight: 700;
+  letter-spacing:1px;
+
+}
+
+/*--Search-box-----*/
+.search-box{
+  background-color: #d1d1d111;
+  padding: 3px 20px;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-right: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.search-box input{
+  background-color:transparent;
+  border:none;
+  color:#ffffff;
+
+
+}
+.search-box input::placeholder{
+  color: #ffffff5e;
+
+}
+.search-box button{
+  background-color:transparent;
+  color:#ffffffc9;
+  border:none;
+  outline: none;
+  cursor: pointer;
 }
