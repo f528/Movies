@@ -16,94 +16,287 @@
         <link rel="stylesheet" href="/css/style.css">
         <!------====Using-Font-Awesome====================-->
         <script src="https://kit.fontawesome.com/517442c859.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!---=====Navigation======================-->
-        <nav class="navigation">
-            <!----menu-btn--------------------->
-            <input type="checkbox" class="menu-btn" id="menu-btn">
-            <label for="menu-btn" class="menu-icon">
-                <span class="nav-icon"></span>
-            </label>
-            <!---Logo---------------------------->
-            <a href="index.html" class="logo">
-                Movies
-                <span>.HD</span>
-            </a>
-            <!---menu---------------------------->
-            <ul class="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Genre</a>
-                </li>
-                <li>
-                    <a href="#">TV Shows</a>
-                </li>
-                <li>
-                    <a href="#">Movies</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <!--Search-Box------------->
-            <form action="" class="search-box">
-                <!--input-->
-                <input
-                    type="text"
-                    name="serach"
-                    placeholder="Search Movie"
-                    class="search-input"
-                    required
-                >
-                <!--btn-->
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <!--nav-end-->
-        </nav>
-        <!--===Slider==============================-->
-        <section id="main-slider">
-            <!---box------------------>
-            <div class="main-slider-box">
-
-                <!--overlayer--------->
-                <a href="#" class="main-slider-overlayer">
-                    <i class="fas fa-play"></i>
+        <!---===CSS-Swiper==================================-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <body>
+            <!---=====Navigation======================-->
+            <nav class="navigation">
+                <!----menu-btn--------------------->
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <!---Logo---------------------------->
+                <a href="index.html" class="logo">
+                    Movies
+                    <span>.HD</span>
                 </a>
-                <!--Img-------------->
-                <div class="main-slider-img">
-                    <img src="/assets/images/1689726503_oppenheimer-streaming-ita.png" alt="Poster">
-                </div>
-                <div class="main-slider-text">
-                    <!--quality------>
-                    <span class="quality">Full HD</span>
-                    <!--bottom-text-->
-                    <div class="bottom-text">
-                        <!--name------>
-                        <div class="movie-name">
-                            <span>2023</span>
-                            <strong>Oppenhaimer</strong>
-                        </div>
-                        <!--category-and-rating-------->
-                        <div class="category-rating">
-                            <!----category----->
-                            <div class="category">
-                                <a href="#">Horror</a>,<a href="#">Mistery</a>,<a href="#">thriller</a>
+                <!---menu---------------------------->
+                <ul class="menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Genre</a>
+                    </li>
+                    <li>
+                        <a href="#">TV Shows</a>
+                    </li>
+                    <li>
+                        <a href="#">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <!--Search-Box------------->
+                <form action="" class="search-box">
+                    <!--input-->
+                    <input
+                        type="text"
+                        name="serach"
+                        placeholder="Search Movie"
+                        class="search-input"
+                        required
+                    >
+                    <!--btn-->
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <!--nav-end-->
+            </nav>
+            <!--===Slider==============================-->
+            <section id="main-slider">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!---box------------------>
+                            <div class="main-slider-box">
+                                <!--overlayer--------->
+                                <a href="#" class="main-slider-overlayer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!--Img-------------->
+                                <div class="main-slider-img">
+                                    <img src="/assets/images/1689726503_oppenheimer-streaming-ita.png" alt="Poster">
+                                </div>
+                                <!---text-------------->
+                                <div class="main-slider-text">
+                                    <!--quality------>
+                                    <span class="quality">Full HD</span>
+                                    <!--bottom-text-->
+                                    <div class="bottom-text">
+                                        <!--name------>
+                                        <div class="movie-name">
+                                            <span>2023</span>
+                                            <strong>Oppenhaimer</strong>
+                                        </div>
+                                        <!--category-and-rating-------->
+                                        <div class="category-rating">
+                                            <!----category----->
+                                            <div class="category">
+                                                <a href="#">Horror</a>
+                                                ,
+                                                <a href="#">Mistery</a>
+                                                ,
+                                                <a href="#">thriller</a>
+                                            </div>
+                                            <!----rating------->
+                                            <div class="rating">
+                                                5.2
+                                                <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!----rating------->
-                            <div class="rating">
-                                5.2 <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <!---box------------------>
+                            <div class="main-slider-box">
+                                <!--overlayer--------->
+                                <a href="#" class="main-slider-overlayer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!--Img-------------->
+                                <div class="main-slider-img">
+                                    <img src="/assets/images/1689726503_oppenheimer-streaming-ita.png" alt="Poster">
+                                </div>
+                                <!---text-------------->
+                                <div class="main-slider-text">
+                                    <!--quality------>
+                                    <span class="quality">Full HD</span>
+                                    <!--bottom-text-->
+                                    <div class="bottom-text">
+                                        <!--name------>
+                                        <div class="movie-name">
+                                            <span>2023</span>
+                                            <strong>Oppenhaimer</strong>
+                                        </div>
+                                        <!--category-and-rating-------->
+                                        <div class="category-rating">
+                                            <!----category----->
+                                            <div class="category">
+                                                <a href="#">Horror</a>
+                                                ,
+                                                <a href="#">Mistery</a>
+                                                ,
+                                                <a href="#">thriller</a>
+                                            </div>
+                                            <!----rating------->
+                                            <div class="rating">
+                                                5.2
+                                                <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <!---box------------------>
+                            <div class="main-slider-box">
+                                <!--overlayer--------->
+                                <a href="#" class="main-slider-overlayer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!--Img-------------->
+                                <div class="main-slider-img">
+                                    <img src="/assets/images/1689726503_oppenheimer-streaming-ita.png" alt="Poster">
+                                </div>
+                                <!---text-------------->
+                                <div class="main-slider-text">
+                                    <!--quality------>
+                                    <span class="quality">Full HD</span>
+                                    <!--bottom-text-->
+                                    <div class="bottom-text">
+                                        <!--name------>
+                                        <div class="movie-name">
+                                            <span>2023</span>
+                                            <strong>Oppenhaimer</strong>
+                                        </div>
+                                        <!--category-and-rating-------->
+                                        <div class="category-rating">
+                                            <!----category----->
+                                            <div class="category">
+                                                <a href="#">Horror</a>
+                                                ,
+                                                <a href="#">Mistery</a>
+                                                ,
+                                                <a href="#">thriller</a>
+                                            </div>
+                                            <!----rating------->
+                                            <div class="rating">
+                                                5.2
+                                                <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!---box------------------>
+                            <div class="main-slider-box">
+                                <!--overlayer--------->
+                                <a href="#" class="main-slider-overlayer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!--Img-------------->
+                                <div class="main-slider-img">
+                                    <img src="/assets/images/1689726503_oppenheimer-streaming-ita.png" alt="Poster">
+                                </div>
+                                <!---text-------------->
+                                <div class="main-slider-text">
+                                    <!--quality------>
+                                    <span class="quality">Full HD</span>
+                                    <!--bottom-text-->
+                                    <div class="bottom-text">
+                                        <!--name------>
+                                        <div class="movie-name">
+                                            <span>2023</span>
+                                            <strong>Oppenhaimer</strong>
+                                        </div>
+                                        <!--category-and-rating-------->
+                                        <div class="category-rating">
+                                            <!----category----->
+                                            <div class="category">
+                                                <a href="#">Horror</a>
+                                                ,
+                                                <a href="#">Mistery</a>
+                                                ,
+                                                <a href="#">thriller</a>
+                                            </div>
+                                            <!----rating------->
+                                            <div class="rating">
+                                                5.2
+                                                <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!---box------------------>
+                            <div class="main-slider-box">
+                                <!--overlayer--------->
+                                <a href="#" class="main-slider-overlayer">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!--Img-------------->
+                                <div class="main-slider-img">
+                                    <img src="/assets/images/1694521769-641924460.jpg" alt="Poster">
+                                </div>
+                                <!---text-------------->
+                                <div class="main-slider-text">
+                                    <!--quality------>
+                                    <span class="quality">Full HD</span>
+                                    <!--bottom-text-->
+                                    <div class="bottom-text">
+                                        <!--name------>
+                                        <div class="movie-name">
+                                            <span>2023</span>
+                                            <strong>Oppenhaimer</strong>
+                                        </div>
+                                        <!--category-and-rating-------->
+                                        <div class="category-rating">
+                                            <!----category----->
+                                            <div class="category">
+                                                <a href="#">Horror</a>
+                                                ,
+                                                <a href="#">Mistery</a>
+                                                ,
+                                                <a href="#">thriller</a>
+                                            </div>
+                                            <!----rating------->
+                                            <div class="rating">
+                                                5.2
+                                                <img src="/assets/images/Imdb-Logo-2001.png" alt="imdb">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
                     </div>
+                   
                 </div>
+            </section>
+            <!-----btns---------------------->
+            <div class="slider-btns">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
             </div>
-            <!---text-------------->
-        </section>
-        <script src="/js/script.js"></script>
-    </body>
-</html>
+            <!---====JS=====Swiper=================================================-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="/js/script.js"></script>
+        </body>
+    </html>
