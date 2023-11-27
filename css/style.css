@@ -378,7 +378,7 @@ a {
   margin: 20px 0px;
 }
 .post-box {
-  width: 300px;
+  width: 100%;
   height: 550px;
   overflow: hidden;
   background-color: #0e0e0ec2;
@@ -403,4 +403,51 @@ a {
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
+}
+.main-slider-text .movie-name span{
+  font-size: 0.9rem ;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgb(240, 240,240,0.82);
+}
+.main-slider-text .movie-name strong,
+.main-slider-text .movie-name a
+{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 10px;
+  color: #dfdfdf;
+  letter-spacing: 0.5px;
+
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+  position:static !important;
+  transform: translate(0,0);
+  margin: 10px 0px 0px 20px !important;
+   
+}
+
+.slider-btns{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1170px;
+  width: 100%;
+  margin :10px auto 0px auto;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 25px !important;
+  font-weight: 800;
+  color :#ffffff
+
+}
+.post-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-gap : 35px;
+  margin :20px 0px 
 }

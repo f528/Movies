@@ -23,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     autoplay:{
         delay:5000,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
 
     },
     breakpoints: {
