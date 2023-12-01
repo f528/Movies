@@ -478,3 +478,24 @@ a {
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
 }
+
+
+/*====footer=========================*/
+footer{
+  background-color: #0e0e0ec2;
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+  padding: 10px 10%;
+
+}
+footer .copyright{
+  color:#4d4d4d;
+  font-size: 0.9rem;
+
+}
+footer .logo{
+  margin: 0px;
+  font-size: 2rem;
+  font-weight: 400;
+}
