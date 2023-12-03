@@ -19,6 +19,15 @@ a {
 }
 ::selection {
   background-color: #e70634;
+  color: #080808;
+}
+/**Hide-defaoult-scroll-bar==============*/
+body::-webkit-scrollbar{
+  display: none;
+}
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /*========navigation=============*/
 
@@ -499,3 +508,58 @@ footer .logo{
   font-size: 2rem;
   font-weight: 400;
 }
+
+/**===fix-menu=========================*/
+.fix-icon .menu-icon{
+  position: fixed;
+  left:40px;
+  top:40px;
+  background-color: #1c1f25;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+
+}
+/****==scroll--=progress-bar================*/
+#progress{
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  position: fixed;
+  bottom:25px;
+  right: 25px;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+  display:grid;
+  place-items: center;
+  z-index: 2;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color:#1c1f25;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0px;
+
+}
+/*---Making-Home-Page-responsive*/
