@@ -4,11 +4,13 @@
   font-family: poppins;
   box-sizing: border-box;
 }
+
 body {
   margin: 0px;
   padding: 0;
   font-family: poppins;
   background-color: #080808;
+ 
 }
 ul {
   list-style: none;
@@ -22,10 +24,10 @@ a {
   color: #080808;
 }
 /**Hide-defaoult-scroll-bar==============*/
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-body{
+body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -478,8 +480,7 @@ body{
   -o-transition: all ease 0.3s;
 }
 .page-number .page-active,
-.page-number a:hover
-{
+.page-number a:hover {
   opacity: 1;
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
@@ -488,32 +489,29 @@ body{
   -o-transition: all ease 0.3s;
 }
 
-
 /*====footer=========================*/
-footer{
+footer {
   background-color: #0e0e0ec2;
   display: flex;
   justify-content: space-between;
-  align-items : center;
+  align-items: center;
   padding: 10px 10%;
-
 }
-footer .copyright{
-  color:#4d4d4d;
+footer .copyright {
+  color: #4d4d4d;
   font-size: 0.9rem;
-
 }
-footer .logo{
+footer .logo {
   margin: 0px;
   font-size: 2rem;
   font-weight: 400;
 }
 
 /**===fix-menu=========================*/
-.fix-icon .menu-icon{
+.fix-icon .menu-icon {
   position: fixed;
-  left:40px;
-  top:40px;
+  left: 40px;
+  top: 40px;
   background-color: #1c1f25;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -524,42 +522,129 @@ footer .logo{
   height: 60px;
   display: flex;
   justify-content: center;
-  align-items:center;
-
-
+  align-items: center;
 }
 /****==scroll--=progress-bar================*/
-#progress{
+#progress {
   height: 50px;
   width: 50px;
-  border-radius:50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  -ms-border-radius:50%;
-  -o-border-radius:50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   position: fixed;
-  bottom:25px;
+  bottom: 25px;
   right: 25px;
-  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-  display:grid;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: grid;
   place-items: center;
   z-index: 2;
 }
 
-#progress-value{
+#progress-value {
   display: block;
   height: calc(100% - 5px);
   width: calc(100% - 5px);
-  background-color:#1c1f25;
-  border-radius:50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  -ms-border-radius:50%;
-  -o-border-radius:50%;
+  background-color: #1c1f25;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   display: grid;
   place-items: center;
   font-weight: 600;
   font-size: 0px;
-
 }
 /*---Making-Home-Page-responsive*/
+@media (max-width: 1200px) {
+  #main-slider,
+  #latest,
+  .slider-btns {
+    width: 90%;
+  }
+  .menu li a {
+    margin: 0px;
+    font-size: 1.6rem;
+  }
+  .menu {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 824px) {
+  .navigation {
+    padding: 20px 10px;
+    width: 90%;
+  }
+  .logo,
+  footer .logo {
+    font-size: 1.3rem;
+  }
+  .post-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 530px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 0px;
+  }
+  .logo {
+    margin: 0px;
+  }
+  .search-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+  .menu li a:hover{
+    font-size: 1.8rem;
+  }
+  .post-container{
+    grid-gap: 15px;
+  }
+  .post-box{
+    height: 450px;
+
+  }
+  footer .copyright{
+    font-size: 0.8rem;
+  }
+  .fix-icon .menu-icon{
+    left: 10px;
+    top: 0px;
+    border-radius:4px  ;
+    -webkit-border-radius:4px  ;
+    -moz-border-radius:4px  ;
+    -ms-border-radius:4px  ;
+    -o-border-radius:4px  ;
+}
+}
+
+@media(max-width: 480px){
+  .post-container{
+     grid-template-columns: 1fr;
+  }
+  .post-box{
+    height: 500px;
+  }
+ 
+}
