@@ -10,7 +10,6 @@ body {
   padding: 0;
   font-family: poppins;
   background-color: #080808;
- 
 }
 ul {
   list-style: none;
@@ -30,6 +29,9 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.container-m {
+  height: 100vh;
 }
 /*========navigation=============*/
 
@@ -615,36 +617,80 @@ footer .logo {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
   }
-  .menu li a:hover{
+  .menu li a:hover {
     font-size: 1.8rem;
   }
-  .post-container{
+  .post-container {
     grid-gap: 15px;
   }
-  .post-box{
+  .post-box {
     height: 450px;
-
   }
-  footer .copyright{
+  footer .copyright {
     font-size: 0.8rem;
   }
-  .fix-icon .menu-icon{
+  .fix-icon .menu-icon {
     left: 10px;
     top: 0px;
-    border-radius:4px  ;
-    -webkit-border-radius:4px  ;
-    -moz-border-radius:4px  ;
-    -ms-border-radius:4px  ;
-    -o-border-radius:4px  ;
-}
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
 }
 
-@media(max-width: 480px){
-  .post-container{
-     grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .post-container {
+    grid-template-columns: 1fr;
   }
-  .post-box{
+  .post-box {
     height: 500px;
   }
- 
+}
+
+/**=====movie-page======***/
+.movie-banner {
+  width: 90%;
+  max-width: 1400px;
+  margin: 10px auto;
+  min-height: 520px;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+}
+.movie-banner::after{
+  content:'';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(32, 32,32,0.7);
+  background:linear-gradient(0deg,rgb(8, 8, 8) 0% ,rgba(0,0,0,0.6)100%);
+}
+.m-banner-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+.m-banner-img::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(32, 32,32,0.7);
+  background: linear-gradient(-90deg,rgb(37, 37, 37,0.2)0%, rgba(15,15,15,0.3) 100%);
+}
+.m-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
